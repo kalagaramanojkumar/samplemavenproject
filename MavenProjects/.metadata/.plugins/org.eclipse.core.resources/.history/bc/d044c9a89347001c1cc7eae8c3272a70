@@ -1,0 +1,17 @@
+package com.manojit.selenium;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class SeleniumHUB {
+
+	public static void main(String[] args) throws Exception {
+		DesiredCapabilities ds=new DesiredCapabilities();
+		ds.setBrowserName("Chrome");
+		ds.setPlatform(Platform.WINDOWS);
+		ChromeOptions co=new ChromeOptions();
+		
+	}
+
+}

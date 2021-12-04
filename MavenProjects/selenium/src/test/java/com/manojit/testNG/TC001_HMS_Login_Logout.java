@@ -1,0 +1,22 @@
+package com.manojit.testNG;
+
+import org.testng.annotations.Test;
+import com.manojit.selenium.java.BasePage;
+import com.manojit.selenium.java.PageUI;
+
+import org.testng.annotations.BeforeTest;
+
+public class TC001_HMS_Login_Logout extends BasePage {
+  @Test(description ="This test case is to verify Login & Logout in HMS" )
+  public void hmsLoginLogout() {
+	PageUI p = new PageUI(driver);
+	p.hmsLogin();
+	p.hmsLogout();
+  }
+  @BeforeTest
+  public void beforeTest() {
+	  browserLaunch("chrome", "http://seleniumbymahesh.com");
+  }
+
+
+}

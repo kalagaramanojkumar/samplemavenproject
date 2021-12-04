@@ -1,0 +1,26 @@
+package com.manojit.selenium;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class SeleniumHUB {
+
+	public static void main(String[] args) throws Exception {
+		DesiredCapabilities ds=new DesiredCapabilities();
+		ds.setBrowserName("Chrome");
+		ds.setPlatform(Platform.WINDOWS);
+		ChromeOptions co=new ChromeOptions();
+		co.merge(ds);
+		String hubURl="http://192.168.0.8:4444/wd/hum";
+		WebDriver driver= new RemoteWebDriver(new URL(hubURl), ds);
+		driver.get("http://seleniumbymahesh.com");
+		driver.manage().window().maximize();
+		System.out.println(driver.getTitle());
+		
+		
+	}
+
+}

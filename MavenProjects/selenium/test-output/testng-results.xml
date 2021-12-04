@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26165" started-at="2021-11-27T13:35:50 IST" finished-at="2021-11-27T13:36:16 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26165" started-at="2021-11-27T13:35:50 IST" finished-at="2021-11-27T13:36:16 IST">
+      <class name="com.manojit.testNG.TC001_HMS_Login_Logout">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.manojit.testNG.TC001_HMS_Login_Logout@467aecef]" name="beforeTest" is-config="true" duration-ms="20804" started-at="2021-11-27T13:35:50 IST" finished-at="2021-11-27T13:36:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="hmsLoginLogout()[pri:0, instance:com.manojit.testNG.TC001_HMS_Login_Logout@467aecef]" name="hmsLoginLogout" duration-ms="5277" started-at="2021-11-27T13:36:11 IST" description="This test case is to verify Login &amp; Logout in HMS" finished-at="2021-11-27T13:36:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hmsLoginLogout -->
+      </class> <!-- com.manojit.testNG.TC001_HMS_Login_Logout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

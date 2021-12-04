@@ -1,0 +1,26 @@
+package com.manojit.selenium.java;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class BasePage {
+	public WebDriver driver;
+	public void browserLaunch(String browser, String url) {
+	
+		if(browser.equalsIgnoreCase("ie")) {
+			System.setProperty("webdriver.ie.driver","E:\\SeleniumDocs\\Webdrivers\\IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
+			
+		}else if(browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "E:\\SeleniumDocs\\Webdrivers\\chromedriver.exe");
+			  driver = new ChromeDriver(); 
+		}else if(browser.equalsIgnoreCase("firefox")) {
+			System.out.println("Browser is not Installed");
+		}
+		driver.get(url);
+		driver.manage().window().maximize();
+	
+	}
+
+}

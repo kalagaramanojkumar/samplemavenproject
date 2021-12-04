@@ -1,0 +1,5 @@
+package com.manojit.selenium.java;
+
+public class BasePage {
+
+}
